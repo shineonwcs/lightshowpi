@@ -127,17 +127,17 @@ ln -fs `which pip3` /usr/bin/pip
 
 # Install decoder
 log Installing decoder...
-pip3 install --upgrade git+https://broken2048@bitbucket.org/broken2048/decoder-v3.py.git
+pip3 install --upgrade --break-system-packages git+https://broken2048@bitbucket.org/broken2048/decoder-v3.py.git
 verify "Installation of decoder-1.5XB-Unix failed"
 
 # Install Python dependencies
-log Preparing to install ${#PYTHON_DEPS[@]} python packages on your system...
+log Preparing to install --break-system-packages ${#PYTHON_DEPS[@]} python packages on your system...
 for _dep in ${PYTHON_DEPS[@]}; do
     pipinstall $_dep;
 done
 
 log Installing rpi-audio-levels...
-pip3 install git+https://github.com/shineonwcs/rpi-audio-levels.git
+pip3 install --break-system-packages git+https://github.com/shineonwcs/rpi-audio-levels.git
 verify "Installation of rpi-audio-levels failed"
 
 # Install pygooglevoice
