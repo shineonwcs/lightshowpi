@@ -114,8 +114,8 @@ svn export https://github.com/raspberrypi/firmware/trunk/opt/vc /opt/vc
 # wiringpi apt-get not available on Deb 11+
 log Install deb package manually for wiringPi
 cd /tmp
-wget https://project-downloads.drogon.net/wiringpi-latest.deb
-/usr/bin/yes | dpkg -i wiringpi-latest.deb
+wget https://github.com/WiringPi/WiringPi/releases/download/3.10/wiringpi_3.10_arm64.deb
+/usr/bin/yes | dpkg -i wiringpi_3.10_arm64.deb
 cd $BUILD_DIR
 
 # Some symlinks that will make life a little easier
