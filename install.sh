@@ -137,7 +137,7 @@ for _dep in ${PYTHON_DEPS[@]}; do
 done
 
 log Installing rpi-audio-levels...
-pip3 install git+https://broken2048@bitbucket.org/broken2048/rpi-audio-levels.git
+pip3 install git+https://github.com/shineonwcs/rpi-audio-levels.git
 verify "Installation of rpi-audio-levels failed"
 
 # Install pygooglevoice
