@@ -142,12 +142,12 @@ verify "Installation of rpi-audio-levels failed"
 
 # Install pygooglevoice
 log Installing pygooglevoice...
-pip3 install --upgrade git+https://github.com/pettazz/pygooglevoice.git
+pip3 install --upgrade --break-system-packages git+https://github.com/pettazz/pygooglevoice.git
 verify "Installation of pygooglevoice failed"
 
 # Install wiringpipy
 log Installing wiringpipy...
-pip3 install --upgrade git+https://broken2048@bitbucket.org/broken2048/wiringpipy.git
+pip3 install --upgrade --break-system-packages git+https://broken2048@bitbucket.org/broken2048/wiringpipy.git
 verify "Installation of wiringpipy failed"
 
 # Optionally add a line to /etc/sudoers
