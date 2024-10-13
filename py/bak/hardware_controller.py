@@ -55,7 +55,7 @@ def exit_function():
 
 atexit.register(exit_function)
 
-pi = pigpio.pi()
+pi = pigpio.pi)_
 if not pi.connected:
     exit("Failed to connect to pigpio daemon")
 
@@ -323,14 +323,12 @@ class Hardware(object):
 
     def initialize(self,reset=True):
         """Set pins as outputs and start all lights in the off state."""
-        self.pi = pigpio.pi()
-        if not self.pi.connected:
-           sys.exit("Failed to connect to pigpio daemon")
-
+        wiringpi.wiringPiSetup()
         self.enable_device()
         self.set_pins_as_outputs()
         if reset:
             self.turn_off_lights()
+
 
 class Channel(object):
     """
@@ -358,14 +356,14 @@ class Channel(object):
         elif piglow:
             self.action = lambda b: wiringpi.analogWritePY(self.pin_number + 577, int(b * 255))
         else:
-            self.action = lambda b: pi.write(self.pin_number, int(b > 0.5))
+            self.action = lambda b: wiringpi.digitalWrite(self.pin_number, int(b > 0.5))
 
     def set_as_input(self):
         """
         set up this pin as input
         """
         self.inout = 'pin is input'
-        pi.set_mode(self.pin_number, pigpio.INPUT)
+        wiringpi.pinMode(self.pin_number, 0)
 
     def set_as_output(self):
         """
@@ -375,7 +373,7 @@ class Channel(object):
         if self.pwm:
             wiringpi.softPwmCreatePY(self.pin_number, 0, self.pwm_max)
         else:
-            pi.set_mode(self.pin_number, pigpio.OUTPUT)
+            wiringpi.pinMode(self.pin_number, 1)
 
     def set_always_on(self, value):
         """
