@@ -1,5 +1,6 @@
 testing after installation
-``` /opt/lightshowpi_venv/bin/python /home/pi/lightshowpi/py/synchronized_lights.py --file=/home/pi/lightshowpi/music/sample/20680__acclivity__testtones.mp3
+```
+/opt/lightshowpi_venv/bin/python /home/pi/lightshowpi/py/synchronized_lights.py --file=/home/pi/lightshowpi/music/sample/20680__acclivity__testtones.mp3
 ```
 
 [http://lightshowpi.org/](http://lightshowpi.org/)
