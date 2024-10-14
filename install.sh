@@ -23,7 +23,7 @@ source /opt/lightshowpi_venv/bin/activate
 
 # Install Python packages within the virtual environment
 echo "Installing Python dependencies within the virtual environment..."
-pip install numpy pyfftw Pillow beautifulsoup4 mutagen pyalsaaudio
+pip install wheel numpy pyfftw Pillow beautifulsoup4 mutagen pyalsaaudio
 pip install Cython  # Install Cython for compiling Python code to C
 pip install bibliopixel  # Install BiblioPixel for LED animation
 pip install pyserial  # Install pyserial for serial communication
