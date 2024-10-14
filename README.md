@@ -1,6 +1,6 @@
 **Installation:**
 ```
-cd ~/lightspeedpi/
+cd ~/lightshowpi/
 ```
 ```
 chmod +x install.sh
