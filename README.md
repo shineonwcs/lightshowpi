@@ -16,13 +16,27 @@ sudo ./install.sh
 ```
 
 **Testing after Installation**
+Test your relay pinout:
+```
+/opt/lightshowpi_venv/bin/python /home/pi/lightshowpi/py/hardware_controller.py --state=flash
+```
+Test that music is playing on your audio out and you aren't missing anything.  You may have to repeat input of your path:  
+```
+echo "Setting up environment variables..."
+export SYNCHRONIZED_LIGHTS_HOME="/home/pi/lightshowpi"
+echo 'export SYNCHRONIZED_LIGHTS_HOME="/home/pi/lightshowpi"' >> ~/.bashrc
+```
+
 ```
 /opt/lightshowpi_venv/bin/python /home/pi/lightshowpi/py/synchronized_lights.py --file=/home/pi/lightshowpi/music/sample/20680__acclivity__testtones.mp3
 ```
-  
+I don't have the passing of audio levels working properly yet...    
 
   
-Leaving the depriciated information below because all the credit goes there. I am simply trying to bring this up to date with my limited skillset. Help is welcome!
+Leaving the depriciated information below because all the credit goes there. I am simply trying to bring this up to date with my limited skillset. Help is welcome!  
+.  
+.  
+.  
 
 [http://lightshowpi.org/](http://lightshowpi.org/)
 
