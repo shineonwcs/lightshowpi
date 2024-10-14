@@ -52,5 +52,8 @@ echo "Setting up environment variables..."
 export SYNCHRONIZED_LIGHTS_HOME="/home/pi/lightshowpi"
 echo 'export SYNCHRONIZED_LIGHTS_HOME="/home/pi/lightshowpi"' >> ~/.bashrc
 
+# Give yourself permission to run the virtual environment
+sudo chown -R pi:pi /opt/lightshowpi_venv/
+
 echo "Installation completed successfully."
 echo "Please check the above messages to ensure everything was installed properly."
