@@ -27,6 +27,7 @@ pip install wheel numpy pyfftw Pillow beautifulsoup4 mutagen pyalsaaudio
 pip install Cython  # Install Cython for compiling Python code to C
 pip install bibliopixel  # Install BiblioPixel for LED animation
 pip install pyserial  # Install pyserial for serial communication
+pip install pigpio
 
 # Installing decoder from a Git repository
 pip install --upgrade git+https://broken2048@bitbucket.org/broken2048/decoder-v3.py.git
