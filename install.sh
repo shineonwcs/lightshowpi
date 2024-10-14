@@ -48,5 +48,9 @@ cd -
 # Deactivate the virtual environment
 deactivate
 
+echo "Setting up environment variables..."
+export SYNCHRONIZED_LIGHTS_HOME="/home/pi/lightshowpi"
+echo 'export SYNCHRONIZED_LIGHTS_HOME="/home/pi/lightshowpi"' >> ~/.bashrc
+
 echo "Installation completed successfully."
 echo "Please check the above messages to ensure everything was installed properly."
