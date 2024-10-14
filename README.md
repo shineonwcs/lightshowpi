@@ -1,3 +1,9 @@
+**Pre install:**  
+Update and install git and vim (you don't have to install vim, but it is my preference to have it around)
+```
+sudo apt update && sudo apt upgrade -y && sudo apt install git vim -y
+```
+
 **Installation:**
 ```
 cd ~/lightshowpi/
